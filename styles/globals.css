@@ -1,5 +1,79 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #403D39;
+  --tranparent: tranparent;
+  --gold: rgb(165, 128, 6);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Montserrat-Light";
+  line-height: 1.5rem;
+}
+
+  /* ----------------   Ivy Mode  --------------------------- */
+  @font-face {
+    font-family: "IvyMode-Thin";
+    src: url('/fonts/IvyMode/IvyMode-Thin.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: "IvyMode-ThinItalic";
+    src: url('/fonts/IvyMode/IvyMode-ThinItalic.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: "IvyMode-Light";
+    src: url('/fonts/IvyMode/IvyMode-Light.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: "IvyMode-LightItalic";
+    src: url('/fonts/IvyMode/IvyMode-LightItalic.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: "IvyMode-Italic";
+    src: url('/fonts/IvyMode/IvyMode-Italic.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: "IvyMode-SemiBold";
+    src: url('/fonts/IvyMode/IvyMode-SemiBold.otf') format('opentype');
+  }
+  
+  
+  
+  /* ----------------   montserrat  --------------------------- */
+  
+  @font-face {
+    font-family: "montserrat-thin";
+    src: url("/fonts/Montserrat/Montserrat-Thin.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "montserrat-light";
+    src: url("/fonts/Montserrat/Montserrat-Light.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "montserrat-thinItalic";
+    src: url("/fonts/Montserrat/Montserrat-ThinItalic.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "montserrat-lightItalic";
+    src: url("/fonts/Montserrat/Montserrat-LightItalic.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: "montserrat-regular";
+    src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format('truetype');
+  }
+  
+  
