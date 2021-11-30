@@ -1,7 +1,13 @@
+import Footer from "../components/Footer/Footer";
+import Hero from "../components/Hero/Hero";
+import Navbar from "../components/Navbar/Navbar";
+
 const Contact = () => {
   return (
     <div>
-      <h1>contact</h1>
+      <Navbar />
+      <Hero />
+      <Footer />
     </div>
   );
 };

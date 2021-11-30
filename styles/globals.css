@@ -6,17 +6,6 @@
   --gold: rgb(165, 128, 6);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat-Light";
-  line-height: 1.5rem;
-}
-
   /* ----------------   Ivy Mode  --------------------------- */
   @font-face {
     font-family: "IvyMode-Thin";
@@ -75,7 +64,89 @@ body {
     font-family: "montserrat-regular";
     src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format('truetype');
   }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat-Light";
+  line-height: 1.5rem;
+}
+
+
   
+  /* ----  HERO styling ---- */
+  .hero {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    font-family: "IvyMode-Thin";
+}
+
+
+.hero > * {
+    z-index: 300;
+}
+
+.hero::after {
+    content: "";
+    background: red;
+    opacity: 0.37;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero__heading {
+    width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2rem;
+    margin: 0 auto;
+    line-height: 2rem;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.hero__desc {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+
+
+@media screen and (min-width: 998px ){
+    .hero__heading {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* ----navbar   ---- */
   .logo-wrapper {
