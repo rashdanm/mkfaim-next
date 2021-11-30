@@ -1,0 +1,18 @@
+.btn {
+    font-family: "IvyMode-Light";
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    font-size:1.5rem;
+    width: 100%;
+
+    background-color: var(--white);
+    color: var(--dark);
+    border: 2px solid var(--black);
+    padding: 20px 40px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+}

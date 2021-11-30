@@ -1,5 +1,7 @@
 import styles from "../styles/Gallery.module.css";
 import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/Hero/Hero";
+import MainText from "../components/MainText/MainText";
 import Footer from "../components/Footer/Footer";
 import { SRLWrapper } from "simple-react-lightbox";
 import galleryInfo from "../data/galleryInfo";
@@ -24,26 +26,33 @@ const options = {
 
 const Gallery = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <SRLWrapper options={options}>
-        <div className="gallery-wrapper">
-          <div className="gallery-container">
-            {galleryInfo.map((item) => (
-              <div className="gallery-img" id={item.title}>
-                <img
-                  className="image"
-                  src={"/images/gallery/" + item.title + ".jpg"}
-                  alt="wedding"
-                />
-              </div>
-            ))}
+      <Hero />
+      <div className="main-section">
+        <SRLWrapper options={options}>
+          <div className={styles["gallery-wrapper"]}>
+            <div className={styles["gallery-container"]}>
+              {galleryInfo.map((item) => (
+                <Fade>
+                  <div
+                    className={styles["gallery-img"]}
+                    id={styles[item.title]}
+                  >
+                    <img
+                      className={styles["image"]}
+                      src={"/images/gallery/" + item.title + ".jpg"}
+                      alt="wedding"
+                    />
+                  </div>
+                </Fade>
+              ))}
+            </div>
           </div>
-        </div>
-      </SRLWrapper>
-
-      <Footer />
-    </div>
+        </SRLWrapper>
+        <Footer />
+      </div>
+    </>
   );
 };
 
