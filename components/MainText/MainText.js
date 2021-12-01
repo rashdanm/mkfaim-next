@@ -12,6 +12,7 @@ function MainText({
   text,
   onClick,
   display,
+  showImage,
 }) {
   return (
     <div className={styles["main"]}>
@@ -23,6 +24,7 @@ function MainText({
           <div
             className={styles["image"]}
             style={{ backgroundImage: `url(${image})` }}
+            style={{ display: `${showImage}` }}
           />
         </Fade>
       </div>

@@ -15,11 +15,13 @@ const About = () => {
       <MainText
         heading="Nice to meet you"
         p1="My name is Faim and im a London based photographer working across the UK who looks to
-create a story at every event I attend. The best part about doing this job is the amazing
-clients that I meet and how some turn into amazing friends!"
+        create a story at every event I attend. The best part about doing this job is the amazing
+        clients that I meet and how some turn into amazing friends!"
         image="/images/about/faim1.jpg"
+        showImage="block"
         display="none"
       />
+
       <Footer />
     </>
   );

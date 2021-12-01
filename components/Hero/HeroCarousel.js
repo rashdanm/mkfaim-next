@@ -10,7 +10,12 @@ const SlideShow = () => {
   const properties = {
     autoplay: true,
     arrows: false,
+    transitionDuration: 3000,
+    duration: 5000,
+    infinite: true,
+    easing: "ease-in, ease-out",
   };
+
   return (
     <div className={styles["main"]}>
       <Fade {...properties} className={styles["imageBg"]}>
@@ -31,6 +36,7 @@ const SlideShow = () => {
           style={{ backgroundImage: `url("/images/home/home4.jpg")` }}
         ></div>
       </Fade>
+
       <div className={styles.info}>
         <h1 className={styles.title}>Asian Wedding Photography</h1>
         <p className={styles.description}>MK Faim</p>
