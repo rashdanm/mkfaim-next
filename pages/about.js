@@ -3,37 +3,26 @@ import Navbar from "../components/Navbar/Navbar";
 import Image from "next/image";
 import AboutHero from "../assets/hero-about.jpg";
 import Fade from "react-reveal/Fade";
+import Hero from "../components/Hero/Hero";
+import MainText from "../components/MainText/MainText";
+import faim from "../assets/about/faim.jpg";
 
 const About = () => {
   return (
     <>
       <Navbar />
-
-      <Image className="hero" src={AboutHero} height="100%" width="100%">
-        <Fade top>
-          <div className="hero__heading">Asian Wedding Photography</div>
-        </Fade>
-        <Fade bottom>
-          <div className="hero__desc">MK Faim</div>
-        </Fade>
-      </Image>
-
-      {/* <Footer /> */}
+      <Hero />
+      <MainText
+        heading="Nice to meet you"
+        p1="My name is Faim and im a London based photographer working across the UK who looks to
+create a story at every event I attend. The best part about doing this job is the amazing
+clients that I meet and how some turn into amazing friends!"
+        image="/images/about/faim1.jpg"
+        display="none"
+      />
+      <Footer />
     </>
   );
 };
 
 export default About;
-
-/*
-<main className={styles.main}>
-      <div className={styles.videoBg}>
-        <video className={styles.video} src="/Images/Astronaut.mp4" autoPlay loop></video>
-      </div>
-      <div className={styles.info}>
-        <h1 className={styles.title}>I'm Randeep Rana</h1>
-        <p className={styles.description}>Full Stack Web Developer 🚀</p>
-      </div>
-    </main>
-
-    */

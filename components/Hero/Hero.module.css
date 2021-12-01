@@ -1,10 +1,10 @@
 .main {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     position: relative;
     
   }
@@ -26,8 +26,8 @@
 
 .imageBg::after {
     content: "";
-    background: var(--black);
-    opacity: 0.37;
+    background: var(--white);
+    opacity: 0.0009;
     width: 100vw;
     height: 100vh;
     position: absolute;

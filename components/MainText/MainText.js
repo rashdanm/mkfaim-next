@@ -7,7 +7,7 @@ function MainText({
   p1,
   p2,
   p3,
-  backgroundImg,
+  image,
   href,
   text,
   onClick,
@@ -22,7 +22,7 @@ function MainText({
         <Fade left>
           <div
             className={styles["image"]}
-            style={{ backgroundImage: `url(${backgroundImg})` }}
+            style={{ backgroundImage: `url(${image})` }}
           />
         </Fade>
       </div>

@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
+import Fade from "react-reveal/Fade";
 
 const Hero = () => {
   return (
