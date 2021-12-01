@@ -4,7 +4,7 @@ import Link from "next/link";
 const Button = ({ display, href, onClick, text }) => {
   return (
     <div style={{ display: display }}>
-      <Link href="/">
+      <Link href={`/${href}`}>
         {/* ---- needs editing -------*/}
         <button onClick={onClick} className={styles["btn"]}>
           {text}
