@@ -23,8 +23,11 @@ function MainText({
         <Fade left>
           <div
             className={styles["image"]}
-            style={{ backgroundImage: `url(${image})` }}
-            style={{ display: `${showImage}` }}
+            style={{
+              backgroundImage: `url(${image})`,
+              display: `${showImage}`,
+            }}
+            // style={{ display: `${showImage}` }}
           />
         </Fade>
       </div>

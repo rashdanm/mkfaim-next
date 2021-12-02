@@ -1,0 +1,181 @@
+.form-heading {
+    font-family: "Ivymode-Light";
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.form-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+}
+
+.form {
+    background-color: white;
+    width: 100%;
+}
+
+
+.custom-field {
+    position: relative;
+    font-size: 1rem;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.custom-field .text-area {
+    padding-top: 4rem;
+}
+
+
+
+.custom-field input {
+    margin-bottom: 1.5rem;
+}
+
+.custom-field textarea {
+    resize: none;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+
+    overflow: none;
+}
+
+.text-area {
+    width: 100%;
+}
+
+.custom-field textarea {
+    width: 100%;
+    overflow: none;
+	height: auto;
+
+}
+
+.custom-field input {
+    width: 100%;
+}
+
+.custom-field textarea,
+.custom-field input {
+    font-family: inherit;
+    border: none;
+    appearance: none;
+    /* background: #f2f2f2; */
+    padding: 12px;
+    border-radius: 3px;
+    /* width: 250px; */
+    outline: none;
+    font-size: 14px;
+    background: 
+        linear-gradient(90deg, rgb(165, 128, 6), rgb(165, 128, 6)) center bottom/0 2px no-repeat,
+        linear-gradient(90deg, #ccc, #ccc) left bottom/100% 2px no-repeat;
+        
+    transition:  background-size 0.3s ease-in-out;
+}
+
+.custom-field input:valid + .placeholder-date,
+.custom-field input:focus + .placeholder-date,
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder {
+    top: 10px;
+    font-size: 0.8rem;
+    color: rgb(165, 128, 6);
+
+} 
+
+.custom-field textarea:valid + .placeholder-textArea,
+.custom-field textarea:focus + .placeholder-textArea {
+    bottom: 20px;
+    font-size: 0.8rem;
+    color: rgb(165, 128, 6);
+    position: absolute;
+}
+
+
+.custom-field .placeholder {
+    font-family: "Ivymode-Thin";
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: black;
+    transition: 
+        top 0.3s ease, 
+        font-size 0.3s ease,
+        color 0.3s ease-in-out;
+}
+
+.custom-field .placeholder-date {
+    background: white;
+    width: 100px;
+    font-family: "Ivymode-Thin";
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: black;
+    transition: 
+        top 0.3s ease, 
+        font-size 0.3s ease,
+        color 0.3s ease-in-out;
+}
+
+.placeholder-textArea {
+
+    margin-top: 2rem;
+    display: block;
+    font-family: "Ivymode-Thin";
+    font-size:1rem;
+    position: relative;
+    left: 12px;
+    transform: translateY(-50%);
+    color: black;
+    transition: 
+        bottom 0.3s ease, 
+        font-size 0.3s ease,
+        color 0.3s ease-in-out;
+    width: 100%;
+}
+
+
+.custom-field textarea:focus,
+.custom-field input:focus {
+    background-size: 100% 2px, 100% 2px, 100%;
+
+}
+
+.button {
+    font-family: "IvyMode-Light";
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    font-size:1.5rem;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+    padding: 20px 40px;
+}
+
+.button:hover{
+    color: var(--white);
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 968px){
+
+ 
+    .custom-field input{
+        width: 45%;
+        margin-right: 2rem;
+    }
+
+    .custom-field textarea {
+        width: 51%;
+    }
+
+
+}
+

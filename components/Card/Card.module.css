@@ -1,0 +1,44 @@
+.card {
+    /* width: 90%;
+    margin: 0 auto; */
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+
+
+.image-wrapper {
+    width: 100%;
+    height: 450px;
+    
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.heading {
+    font-family: "IvyMode-Light";
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+@media screen and (min-width: 968px) {
+    .card {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 100%;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        
+    }
+}
+

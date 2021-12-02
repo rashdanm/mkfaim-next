@@ -1,5 +1,6 @@
-import Slider from "react-slick";
+import styles from "./Testimonial.module.css";
 import testimonialInfo from "../../data/testimonialInfo";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -17,6 +18,7 @@ function TestimonialSlider() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          focusOnSelect: true,
         },
       },
       {
@@ -29,26 +31,24 @@ function TestimonialSlider() {
     ],
   };
   return (
-    <div className="slider-container">
+    <div className={styles["main"]}>
+      <h1 className={styles["heading"]}>Testimonials</h1>
       <Slider {...settings}>
         {testimonialInfo.map((item) => (
           <>
-            <div className="testimonial-image">
+            <div className={styles["image-wrapper"]}>
               <img
-                src={
-                  require("../../assets/testimonial/" + item.image + ".jpg")
-                    .default
-                }
+                src={"/images/testimonial/" + item.image + ".jpg"}
                 alt="happy couple"
               />
             </div>
 
-            <div className="testimonial-text-container">
-              <div className="testimonial-highlight">{item.highlight}</div>
-              <div className="testimonial-comment">
+            <div className={styles["text-container"]}>
+              <div className={styles["highlight"]}>{item.highlight}</div>
+              <div className={styles["comment"]}>
                 <p>{item.comment}</p>
               </div>
-              <div className="testimonial-couple">{item.couple}</div>
+              <div className={styles["couple"]}>{item.couple}</div>
             </div>
           </>
         ))}

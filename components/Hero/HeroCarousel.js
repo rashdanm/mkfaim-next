@@ -1,10 +1,6 @@
 import styles from "./HeroCarousel.module.css";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import home1 from "../../assets/home/home1.jpg";
-import home2 from "../../assets/home/home2.jpg";
-import home3 from "../../assets/home/home3.jpg";
-import Image from "next/image";
 
 const SlideShow = () => {
   const properties = {
@@ -21,19 +17,23 @@ const SlideShow = () => {
       <Fade {...properties} className={styles["imageBg"]}>
         <div
           className={styles.image}
-          style={{ backgroundImage: `url("/images/home/home1.jpg")` }}
+          id={styles["one"]}
+          // style={{ backgroundImage: `url("/images/home/home1.jpg")` }}
         ></div>
         <div
           className={styles.image}
-          style={{ backgroundImage: `url("/images/home/home2.jpg")` }}
+          id={styles["two"]}
+          // style={{ backgroundImage: `url("/images/home/home2.jpg")` }}
         ></div>
         <div
           className={styles.image}
-          style={{ backgroundImage: `url("/images/home/home3.jpg")` }}
+          id={styles["three"]}
+          // style={{ backgroundImage: `url("/images/home/home3.jpg")` }}
         ></div>
         <div
           className={styles.image}
-          style={{ backgroundImage: `url("/images/home/home4.jpg")` }}
+          id={styles["four"]}
+          // style={{ backgroundImage: `url("/images/home/home4.jpg")` }}
         ></div>
       </Fade>
 

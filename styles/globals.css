@@ -82,11 +82,43 @@ body {
   width: 100%;
   position: absolute;
   top: 100vh;
-
 }
 
-  
-  /* ----  HERO styling ---- */
+/* ----  ACCORDION ---- */
+
+
+.accordian {
+  background-color: (251, 251, 251);
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #444;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+
+.accordian:hover, .active {
+  background-color: rgb(220, 220, 220);
+  border: none;
+  color: rgb(165, 128, 6);
+}
+
+
+.accordian__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+
+
+
 
 
 
@@ -275,75 +307,3 @@ body {
     }
 
 
-
-
-    .slider-container {
-      /* background-color: rgb(120, 196, 170); */
-      padding-left: 5vw;
-      padding-right: 5vw;
-      padding-top: 1.5rem;
-      margin-bottom: 2.5rem;
-      background-color: rgb(249, 239, 242);
-  }
-  
-  .slider {
-      height: auto;
-      width: 100%;
-      padding-bottom: 2rem;
-  }
-  
-  .testimonial-image {
-      height: 400px;
-      padding: 1rem;
-  }
-  
-  img {
-      object-fit: center;
-  }
-  
-  .testimonial-text-container {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      padding-left: 1rem;
-      padding-right : 1rem;
-      width: 100%;
-  }
-  
-  .testimonial-highlight {
-      font-family: "IvyMode-Light";
-      text-align: center;
-      padding-bottom: 1rem;
-      font-size: 1.5rem;
-      padding-left: 1rem;
-      padding-right: 2rem;
-      min-height: 100px;
-  }
-  
-  .testimonial-highlight {
-      padding-top: 1rem;
-      line-height: 1.75rem;
-  }
-  
-  .testimonial-highlight::before {
-      content: open-quote;
-  }
-  
-  .testimonial-highlight::after {
-      content: close-quote;
-  }
-  
-  
-  .testimonial-comment {
-      font-family: "montserrat-lightItalic";
-      padding-bottom: 2rem;
-      min-height: 180px;
-      width: 100%;
-      
-  }
-  
-  .testimonial-couple {
-      font-size: 0.9rem;
-      font-family: "montserrat-regular";
-      text-align: left;
-      
-  }

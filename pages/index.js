@@ -19,13 +19,13 @@ export default function Home() {
       <HeroCarousel />
       <MainText
         showImage="none"
-        heading="Hi here is a little about me"
-        p1="My name is Faim and im a London based photographer working across the UK who looks to
+        heading="Hi, here's a little about me"
+        p1="My name is Faim and im a London based photographer working across the UK. I look to
             create a story at every event I attend. The best part about doing this job is the amazing
               clients that I meet and how some turn into amazing friends!"
-        p2="Capueting the small things is what I love the most, the hugs the dop of tear, the laughter at
-            the couple shoot, these are the moments that I want to capture for you."
-        p3="Have a look through the site and cant wait to work with you soon"
+        p2="Capturing the small things is what I love the most - the hugs, the drops of tears, the laughter at
+            the couple shoot. These are the moments that I want to capture for you."
+        p3="Have a look through the site and I can't wait to work with you soon"
         text="About"
         href="about"
       />
@@ -33,7 +33,7 @@ export default function Home() {
       <MainText
         showImage="none"
         heading="Let's work together"
-        p1="I cant wait to be a part of your special day. Hit the button below to send an enquiry and lets
+        p1="I cant wait to be a part of your special day. Hit the button below to send an enquiry and let's
         arrange a chat or a coffee."
         text="Contact"
         href="contact"

@@ -1,0 +1,89 @@
+.main {
+    /* background-color: rgb(120, 196, 170); */
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    background-color: rgb(249, 239, 242);
+}
+
+.heading {
+    font-family: "IvyMode-Light";
+    font-size: 2.2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.image-wrapper {
+    height: 400px;
+    padding: 1rem;  
+}
+    
+.image-wrapper img {
+    object-fit: cover;
+    object-position: center;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;   
+}    
+
+.text-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right : 1rem;
+    width: 100%;
+}
+
+.highlight {
+    font-family: "IvyMode-Light";
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: 100px;
+    padding-top: 1rem;
+    line-height: 1.75rem;
+}
+
+.highlight:before {
+    content: open-quote;
+}
+
+.highlight:after {
+    content: close-quote;
+}
+
+.comment {
+    font-family: "montserrat-lightItalic";
+    text-align: center;
+    padding-bottom: 1rem;
+    min-height: 200px;
+    width: 100%;
+    
+}
+
+.couple {
+    font-size: 0.9rem;
+    font-family: "montserrat-regular";
+    text-align: center;
+    
+}
+
+    /* .slider {
+        height: auto;
+        width: 100%;
+        padding-bottom: 2rem;
+    } */
+        
+    
+  
+  
+    
+  
+    
+    
+    
+    
+    

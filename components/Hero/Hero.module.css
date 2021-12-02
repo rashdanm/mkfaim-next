@@ -1,3 +1,18 @@
+#about {
+  background-image: url("../../assets/home/home1.jpg")
+}
+
+.hero {
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -26,8 +41,8 @@
 
 .imageBg::after {
     content: "";
-    background: var(--white);
-    opacity: 0.0009;
+    background: rgba(0,0,0,0.2);
+    opacity: 0.5;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -61,6 +76,7 @@
     font-size: 1.8rem;
     padding-bottom: 1rem;
     text-align: center;
+
   }
 
   
@@ -68,12 +84,15 @@
     text-align: center;
     font-size: 1.2rem;
   }
-  
 
 
 @media screen and (min-width: 998px ){
   .title {
       font-size: 3rem;
       padding-bottom: 2rem;
+  }
+
+  #about {
+    background-image: url("../../assets/home/home3.jpg")
   }
 }

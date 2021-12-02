@@ -1,3 +1,18 @@
+#one {
+  background-image: url("../../assets/home/home1.jpg")
+}
+
+#two {
+  background-image: url("../../assets/home/home2.jpg")
+}
+#three {
+  background-image: url("../../assets/home/home3.jpg")
+}
+
+#four {
+  background-image: url("../../assets/home/home4.jpg")
+}
+
 .main {
     flex: 1;
     display: flex;
@@ -67,4 +82,19 @@
 .description {
   text-align: center;
   font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 998px ){
+
+
+  #one {
+    background-image: url("../../assets/home/home1-lg.jpg")
+  }
+
+  #four {
+    background-position: right 45px;
+  
+
+  }
 }
