@@ -24,9 +24,12 @@ function Accordian(props) {
 
   return (
     <div className={styles["accordion-section"]}>
-      <button className={`accordian ${setActive}`} onClick={toggleAccordian}>
+      <button
+        className={`${styles["accordion"]} ${styles[{ setActive }]}`}
+        onClick={toggleAccordian}
+      >
         <p className={styles["title"]}>{props.title}</p>
-        <Chevron className={`${setRotate}`} width={10} fill={"#777"} />
+        {/* <Chevron className={`styles[${setRotate}]`} width={10} fill={"#777"} /> */}
       </button>
       <div
         ref={content}

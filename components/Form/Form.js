@@ -24,7 +24,7 @@ const Form = () => {
         <Label
           className="placeholder"
           placeholder="Email"
-          type="email"
+          type="text"
           labelFor="email"
           name="email"
         />
