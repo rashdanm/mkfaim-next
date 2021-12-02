@@ -82,7 +82,7 @@
 .custom-field input:focus + .placeholder {
     top: 10px;
     font-size: 0.8rem;
-    color: rgb(165, 128, 6);
+    color: var(--gold);
 
 } 
 
@@ -90,7 +90,7 @@
 .custom-field textarea:focus + .placeholder-textArea {
     bottom: 20px;
     font-size: 0.8rem;
-    color: rgb(165, 128, 6);
+    color: var(--gold);
     position: absolute;
 }
 
@@ -147,6 +147,13 @@
 
 }
 
+.textarea {
+    overflow-y: hidden;
+}
+.textarea::-webkit-scrollbar {
+    display: none;
+  }
+
 .button {
     font-family: "IvyMode-Light";
     cursor: pointer;
@@ -163,6 +170,11 @@
     color: var(--white);
     background-color: var(--black);
     transition: all 0.3s ease-in-out;
+}
+
+.message-status {
+    padding-top:0.5rem;
+    color: var(--gold);
 }
 
 @media screen and (min-width: 968px){
