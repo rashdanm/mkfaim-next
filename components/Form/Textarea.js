@@ -4,7 +4,7 @@ const Textarea = ({ name, onChange, labelFor, value, errorMessage }) => {
   return (
     <label
       className={`${styles["custom-field"]} ${styles["text-area"]}`}
-      for={labelFor}
+      htmlFor={labelFor}
     >
       <span className={styles["placeholder-textArea"]}>Message</span>
       <div className={styles["error-textarea"]}>{errorMessage}</div>

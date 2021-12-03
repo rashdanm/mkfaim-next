@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar/Navbar";
 import HeroCarousel from "../components/Hero/HeroCarousel";
@@ -14,8 +13,8 @@ export default function Home() {
     <div className={styles.Home}>
       <Head>
         <title>MK Faim Photography</title>
-        <meta name="description" content="MK Faim by rashdan" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="MK Faim Photograhy" />
+        <link rel="shortcut icon" href="static/favicon.ico" />
       </Head>
       <Navbar />
       <HeroCarousel />

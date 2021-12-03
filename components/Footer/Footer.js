@@ -23,9 +23,9 @@ const Footer = () => {
       <hr />
       <div className={styles["footer-middle"]}>
         <ul className={styles["footer-menu"]}>
-          {links.map((link) => (
+          {links.map((link, index) => (
             <Link
-              key={link.id}
+              key={index}
               href={link.href}
               className={styles["footer-link"]}
             >

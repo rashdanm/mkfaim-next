@@ -12,7 +12,7 @@ const Label = ({
 }) => {
   return (
     <>
-      <label className={styles["custom-field"]} for={labelFor}>
+      <label className={styles["custom-field"]} htmlFor={labelFor}>
         <input
           type={type}
           name={name}

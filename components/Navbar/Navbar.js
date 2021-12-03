@@ -62,8 +62,8 @@ const Navbar = () => {
               : styles["nav-menu"]
           }
         >
-          {links.map((link) => (
-            <Link href={link.href}>
+          {links.map((link, index) => (
+            <Link key={index} href={link.href}>
               <li
                 className={styles["nav-link"]}
                 style={
