@@ -24,11 +24,11 @@ const Form = () => {
     let tempErrors = {};
     let isValid = true;
 
-    if (fname.length <= 0) {
+    if (fname.length <= 2) {
       tempErrors["fname"] = true;
       isValid = false;
     }
-    if (lname.length <= 0) {
+    if (lname.length <= 2) {
       tempErrors["lname"] = true;
       isValid = false;
     }
@@ -47,12 +47,13 @@ const Form = () => {
     if (venue.length <= 0) {
       tempErrors["venue"] = true;
       isValid = false;
+      s;
     }
     if (date.length <= 0) {
       tempErrors["date"] = true;
       isValid = false;
     }
-    if (message.length <= 0) {
+    if (message.length <= 50) {
       tempErrors["message"] = true;
       isValid = false;
     }
@@ -61,8 +62,6 @@ const Form = () => {
     console.log("errors", errors);
     return isValid;
   };
-
-  //   const [form, setForm] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -130,6 +129,7 @@ const Form = () => {
           onChange={(e) => {
             setFname(e.target.value);
           }}
+          errorMessage={errors?.fname && "Please enter your first name"}
           className="placeholder"
           placeholder="First name"
           type="text"
@@ -142,6 +142,7 @@ const Form = () => {
           onChange={(e) => {
             setLname(e.target.value);
           }}
+          errorMessage={errors?.lname && "Please enter your last name"}
           className="placeholder"
           placeholder="Last name"
           type="text"
@@ -154,6 +155,7 @@ const Form = () => {
           onChange={(e) => {
             setEmail(e.target.value);
           }}
+          errorMessage={errors?.email && "Please enter your email"}
           className="placeholder"
           placeholder="Email"
           type="text"
@@ -166,6 +168,7 @@ const Form = () => {
           onChange={(e) => {
             setPhone(e.target.value);
           }}
+          errorMessage={errors?.phone && "Please enter your phone number"}
           className="placeholder"
           placeholder="Phone"
           type="tel"
@@ -178,6 +181,7 @@ const Form = () => {
           onChange={(e) => {
             setEvent(e.target.value);
           }}
+          errorMessage={errors?.event && "Please enter the event type"}
           className="placeholder"
           placeholder="Type of Event"
           type="text"
@@ -190,6 +194,7 @@ const Form = () => {
           onChange={(e) => {
             setVenue(e.target.value);
           }}
+          errorMessage={errors?.venue && "Please enter your chosen venue"}
           className="placeholder"
           placeholder="Venue"
           type="text"
@@ -202,6 +207,7 @@ const Form = () => {
           onChange={(e) => {
             setDate(e.target.value);
           }}
+          errorMessage={errors?.date && "Please enter the event date"}
           className="placeholder-date"
           placeholder="Date"
           type="date"
@@ -214,6 +220,9 @@ const Form = () => {
           onChange={(e) => {
             setMessage(e.target.value);
           }}
+          errorMessage={
+            errors?.message && "Message requires at least 50 characters"
+          }
           labelFor="message"
           name="message"
           value={message}

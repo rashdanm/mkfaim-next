@@ -1,7 +1,5 @@
 import { useState, useRef } from "react";
 import styles from "./Accordion.module.css";
-import Chevron from "./Chevron";
-import { FiChevron } from "react-icons/fi";
 
 function Accordian(props) {
   const [setActive, setActiveState] = useState("");
@@ -29,7 +27,6 @@ function Accordian(props) {
         onClick={toggleAccordian}
       >
         <p className={styles["title"]}>{props.title}</p>
-        {/* <Chevron className={`styles[${setRotate}]`} width={10} fill={"#777"} /> */}
       </button>
       <div
         ref={content}

@@ -6,6 +6,8 @@ import HeroCarousel from "../components/Hero/HeroCarousel";
 import Footer from "../components/Footer/Footer";
 import MainText from "../components/MainText/MainText";
 import Testimonial from "../components/Testimonial/Testimonial";
+import homeInfo from "../data/homeInfo";
+import Card from "../components/Card/Card";
 
 export default function Home() {
   return (
@@ -19,7 +21,7 @@ export default function Home() {
       <HeroCarousel />
       <MainText
         showImage="none"
-        heading="Hi, here's a little about me"
+        heading="Hi, here's a little bit about me"
         p1="My name is Faim and im a London based photographer working across the UK. I look to
             create a story at every event I attend. The best part about doing this job is the amazing
               clients that I meet and how some turn into amazing friends!"
@@ -29,6 +31,16 @@ export default function Home() {
         text="About"
         href="about"
       />
+      <div className={styles["card-section"]}>
+        {homeInfo.map((item) => (
+          <Card
+            key={item.id}
+            src={"/images/home/" + item.image + ".jpg"}
+            heading={item.heading}
+            text={item.text}
+          />
+        ))}
+      </div>
       <Testimonial />
       <MainText
         showImage="none"

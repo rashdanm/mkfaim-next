@@ -1,5 +1,14 @@
 #about {
-  background-image: url("../../assets/home/home1.jpg")
+  background-image: url("../../assets/home/home3.jpg")
+}
+#gallery {
+  background-image: url("../../assets/gallery/gallery.jpg")
+}
+#faq {
+  background-image: url("../../assets/faq/faq.jpg")
+}
+#contact {
+  background-image: url("../../assets/contact/contact.jpg")
 }
 
 .hero {
@@ -41,8 +50,8 @@
 
 .imageBg::after {
     content: "";
-    background: rgba(0,0,0,0.2);
-    opacity: 0.5;
+    background: rgba(0,0,0,0.6);
+    opacity: 0.35;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -55,9 +64,6 @@
 .image {
     width: 100vw;
     height: 100vh;
-    /* -o-object-fit: cover;
-    object-fit: cover; */
-    /* background: #232a34; */
   }
 
 .info {
@@ -74,7 +80,7 @@
     margin: 0 auto;
     line-height: 2rem;
     font-size: 1.8rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.1rem;
     text-align: center;
 
   }
@@ -88,8 +94,8 @@
 
 @media screen and (min-width: 998px ){
   .title {
-      font-size: 3rem;
-      padding-bottom: 2rem;
+      font-size: 3.5rem;
+      padding-bottom: 1rem;
   }
 
   #about {

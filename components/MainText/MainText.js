@@ -27,7 +27,6 @@ function MainText({
               backgroundImage: `url(${image})`,
               display: `${showImage}`,
             }}
-            // style={{ display: `${showImage}` }}
           />
         </Fade>
       </div>

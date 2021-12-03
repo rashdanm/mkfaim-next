@@ -40,8 +40,8 @@
 
 .image::after {
     content: "";
-    background: whitesmoke;
-    opacity: 0.1;
+    background: rgba(0,0,0,0.9);
+    opacity: 0.3;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -72,7 +72,7 @@
   padding-right: 5vw;
   padding-top: 2rem;
   margin: 0 auto;
-  line-height: 2rem;
+  line-height: 2.2rem;
   font-size: 1.8rem;
   padding-bottom: 1rem;
   text-align: center;
@@ -92,9 +92,16 @@
     background-image: url("../../assets/home/home1-lg.jpg")
   }
 
-  #four {
-    background-position: right 45px;
-  
+  #two {
+    background-image: url("../../assets/home/home6.jpg")
+  }
 
+  #four {
+    background-image: url("../../assets/home/home5.jpg")
+  }
+
+  .title {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
   }
 }

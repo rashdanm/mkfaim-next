@@ -1,13 +1,10 @@
 import styles from "../styles/Gallery.module.css";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
-import MainText from "../components/MainText/MainText";
 import Footer from "../components/Footer/Footer";
 import { SRLWrapper } from "simple-react-lightbox";
 import galleryInfo from "../data/galleryInfo";
 import Fade from "react-reveal/Fade";
-import Image from "next/image";
-import { imageConfigDefault } from "next/dist/server/image-config";
 
 const options = {
   settings: {
@@ -28,7 +25,7 @@ const Gallery = () => {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero imageId="gallery" text="view the collection" heading="Gallery" />
       <div className="main-section">
         <SRLWrapper options={options}>
           <div className={styles["gallery-wrapper"]}>

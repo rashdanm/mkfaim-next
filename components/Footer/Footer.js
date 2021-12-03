@@ -18,13 +18,17 @@ const Footer = () => {
         <div className={styles["logo-wrapper"]}>
           <div className={styles["footer-logo"]}>MKFAIM</div>
         </div>
-        <p>Specialist in Asian Wedding Photography</p>
+        <p>Luxury Asian Wedding Photography</p>
       </div>
       <hr />
       <div className={styles["footer-middle"]}>
         <ul className={styles["footer-menu"]}>
           {links.map((link) => (
-            <Link href={link.href} className={styles["footer-link"]}>
+            <Link
+              key={link.id}
+              href={link.href}
+              className={styles["footer-link"]}
+            >
               <li>{link.text}</li>
             </Link>
           ))}

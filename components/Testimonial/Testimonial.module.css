@@ -1,17 +1,22 @@
 .main {
-    /* background-color: rgb(120, 196, 170); */
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 1.5rem;
     margin-bottom: 2.5rem;
-    background-color: rgb(249, 239, 242);
+    background-color: rgb(229, 229, 229);
+    text-align: center;
+}
+
+.card {
+    max-width: 800px;
 }
 
 .heading {
     font-family: "IvyMode-Light";
     font-size: 2.2rem;
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    text-align: left;
 }
 
 .image-wrapper {
@@ -71,12 +76,7 @@
     
 }
 
-    /* .slider {
-        height: auto;
-        width: 100%;
-        padding-bottom: 2rem;
-    } */
-        
+
     
   
   

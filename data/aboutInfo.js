@@ -7,8 +7,8 @@ const aboutInfo = [
   },
   {
     id: 2,
-    heading: "Bespoke wedding packages",
-    text: "I aim to tailor the package to your needs. When you enquire, ensure to add every little deatil. This will allow me to send you an accurate quote based on the needs you provide!",
+    heading: "Id aliquet lectus proin",
+    text: "Ipsum dolor sit amet consectetur adipiscing elit ut. Senectus et netus et malesuada fames ac turpis egestas sed. ",
     image: "card2",
   },
   {

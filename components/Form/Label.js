@@ -8,6 +8,7 @@ const Label = ({
   name,
   onChange,
   labelFor,
+  errorMessage,
 }) => {
   return (
     <>
@@ -21,9 +22,7 @@ const Label = ({
           required
         />
         <span className={styles[`${className}`]}>{placeholder}</span>
-        <span className={styles["error"]}>
-          Please enter your first name correct;y
-        </span>
+        <span className={styles["error"]}>{errorMessage}</span>
       </label>
     </>
   );
