@@ -22,6 +22,7 @@ const About = () => {
       <div className={styles["card-section"]}>
         {aboutInfo.map((item) => (
           <Card
+            key={item.id}
             src={"/images/about/" + item.image + ".jpg"}
             heading={item.heading}
             text={item.text}

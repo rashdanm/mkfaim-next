@@ -12,7 +12,11 @@ const Faq = () => {
       <Hero imageId="faq" text="Frequently asked questions" heading="FAQs" />
       <div className={styles["main"]}>
         {faqInfo.map((item) => (
-          <Accordion title={item.question} content={item.answer} />
+          <Accordion
+            key={item.id}
+            title={item.question}
+            content={item.answer}
+          />
         ))}
       </div>
       <Footer />

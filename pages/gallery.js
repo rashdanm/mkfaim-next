@@ -33,6 +33,7 @@ const Gallery = () => {
               {galleryInfo.map((item) => (
                 <Fade>
                   <div
+                    key={item.id}
                     className={styles["gallery-img"]}
                     id={styles[item.title]}
                   >

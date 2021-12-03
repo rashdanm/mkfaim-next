@@ -18,8 +18,12 @@ const SlideShow = () => {
   return (
     <div className={styles["main"]}>
       <Fade {...properties} className={styles["imageBg"]}>
-        {images.map((image) => (
-          <div className={styles.image} id={styles[`${image}`]}></div>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={styles.image}
+            id={styles[`${image}`]}
+          ></div>
         ))}
       </Fade>
 
