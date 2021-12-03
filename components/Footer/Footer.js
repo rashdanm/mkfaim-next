@@ -39,12 +39,20 @@ const Footer = () => {
         <p>info@mkfaim.co.uk</p>
         <div className={styles["socialIcons-container"]}>
           <div className={styles["social-icon"]}>
-            <a href="https://www.instagram.com/mkfaim/?hl=en" target="_blank">
+            <a
+              href="https://www.instagram.com/mkfaim/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaSnapchatSquare size="42" />
             </a>
           </div>
           <div className={styles["social-icon"]}>
-            <a href="https://www.instagram.com/mkfaim/?hl=en" target="_blank">
+            <a
+              href="https://www.instagram.com/mkfaim/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram size="42" />
             </a>
           </div>
