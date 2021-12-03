@@ -149,6 +149,7 @@ const Form = () => {
           name="lname"
           value={lname}
         />
+
         <Label
           onChange={(e) => {
             setEmail(e.target.value);
@@ -160,6 +161,7 @@ const Form = () => {
           name="email"
           value={email}
         />
+
         <Label
           onChange={(e) => {
             setPhone(e.target.value);
@@ -171,6 +173,7 @@ const Form = () => {
           name="phone"
           value={phone}
         />
+
         <Label
           onChange={(e) => {
             setEvent(e.target.value);
@@ -182,6 +185,7 @@ const Form = () => {
           name="event"
           value={event}
         />
+
         <Label
           onChange={(e) => {
             setVenue(e.target.value);
@@ -193,6 +197,7 @@ const Form = () => {
           name="venue"
           value={venue}
         />
+
         <Label
           onChange={(e) => {
             setDate(e.target.value);
@@ -204,6 +209,7 @@ const Form = () => {
           name="date"
           value={date}
         />
+
         <Textarea
           onChange={(e) => {
             setMessage(e.target.value);
@@ -212,6 +218,7 @@ const Form = () => {
           name="message"
           value={message}
         />
+
         <button
           type="submit"
           className={styles["button"]}

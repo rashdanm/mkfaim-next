@@ -4,6 +4,7 @@
   --gray: #403D39;
   --tranparent: tranparent;
   --gold: rgb(165, 128, 6);
+  --red: rgb(201, 73, 73);
 }
 
 @import "react-slideshow-image/dist/styles.css";

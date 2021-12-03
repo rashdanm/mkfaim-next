@@ -10,17 +10,22 @@ const Label = ({
   labelFor,
 }) => {
   return (
-    <label className={styles["custom-field"]} for={labelFor}>
-      <input
-        type={type}
-        name={name}
-        onChange={onChange}
-        value={value}
-        autoComplete="off"
-        required
-      />
-      <span className={styles[`${className}`]}>{placeholder}</span>
-    </label>
+    <>
+      <label className={styles["custom-field"]} for={labelFor}>
+        <input
+          type={type}
+          name={name}
+          onChange={onChange}
+          value={value}
+          autoComplete="off"
+          required
+        />
+        <span className={styles[`${className}`]}>{placeholder}</span>
+        <span className={styles["error"]}>
+          Please enter your first name correct;y
+        </span>
+      </label>
+    </>
   );
 };
 

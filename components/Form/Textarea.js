@@ -7,6 +7,7 @@ const Textarea = ({ name, onChange, labelFor, value }) => {
       for={labelFor}
     >
       <span className={styles["placeholder-textArea"]}>Message</span>
+
       <textarea
         className={styles["textarea"]}
         name={name}
@@ -15,6 +16,7 @@ const Textarea = ({ name, onChange, labelFor, value }) => {
         rows={10}
         required
       />
+      <span className={styles["error-textarea"]}>Please type a message</span>
     </label>
   );
 };
