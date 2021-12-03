@@ -31,9 +31,8 @@ const Gallery = () => {
           <div className={styles["gallery-wrapper"]}>
             <div className={styles["gallery-container"]}>
               {galleryInfo.map((item) => (
-                <Fade>
+                <Fade key={item.id}>
                   <div
-                    key={item.id}
                     className={styles["gallery-img"]}
                     id={styles[item.title]}
                   >
